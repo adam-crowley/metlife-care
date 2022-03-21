@@ -8,29 +8,10 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /*
@@ -75,9 +56,6 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-Author's custom styles
-========================================================================== */
 /* ==========================================================================
 Helper classes
 ========================================================================== */
@@ -238,6 +216,42 @@ h3 {
     page-break-after: avoid;
   }
 }
+/* ==========================================================================
+	 Typography
+	 ========================================================================== */
+body {
+  color: #222;
+  font-size: 1em;
+  /* 16px */
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1rem;
+  /* 16px */
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
 /*!
  * Bootstrap Grid v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
