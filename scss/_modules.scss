@@ -1,4 +1,9 @@
-html img {
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+img {
   max-width: 100%;
 }
 .hero {
@@ -37,6 +42,60 @@ html img {
   margin-top: auto;
 }
 
+.main {
+  width: 840px;
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 100px auto 0;
+}
+
+.intro {
+  margin-bottom: 80px;
+}
+.intro p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.section h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.section h2 span {
+  font-weight: bold;
+  color: #3fd6d4;
+}
+.section__img {
+  width: auto;
+  height: 114px;
+  margin-bottom: 30px;
+}
+.section__img--tall {
+  height: 192px;
+}
+.section__img--sml {
+  height: 47px;
+}
+.section__img--five {
+  height: 130px;
+}
+.section__img--eight {
+  height: 179px;
+}
+.section__img--nga {
+  height: 63px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
 .button {
   font-weight: 300;
   font-size: 0.9rem;
@@ -45,7 +104,7 @@ html img {
   display: inline-flex;
   align-items: center;
   border-radius: 40px;
-  height: 40px;
+  height: 45px;
   padding: 0.05rem 1.1rem 0rem 1.4rem;
   border: solid 2px #fff;
   outline: 0;
@@ -53,13 +112,13 @@ html img {
   line-height: 40px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  color: #000;
+  color: #19124c;
   cursor: pointer;
   transition:
     background-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
   &:hover {
-    background-color: #000;
+    background-color: #19124c;
     color: #fff;
   }
 }
@@ -75,5 +134,12 @@ html img {
 }
 
 .footer {
+  display: flex;
+  margin-top: auto;
   background-color: black;
+  justify-content: right;
+  padding: 20px;
+}
+.footer__logo {
+  width: 160px;
 }
