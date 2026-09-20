@@ -1,3 +1,79 @@
-h1 {
-  text-align: center;
+html img {
+  max-width: 100%;
+}
+.hero {
+  position: relative;
+}
+.hero__content {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 5.5vw;
+  height: 100%;
+}
+.hero__met {
+  width: 19%;
+  margin-bottom: 3vw;
+}
+.hero__phase {
+  font-size: 1.75vw;
+  font-weight: bold;
+  color: #3fd6d4;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+.hero__title {
+  color: white;
+  width: 48.5vw;
+  margin-bottom: 1vw;
+}
+.hero__subline {
+  font-size: 1.8vw;
+  font-weight: normal;
+}
+.hero__federation {
+  width: 7vw;
+  margin-top: auto;
+}
+
+.button {
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-decoration: none;
+  pointer-events: all;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 40px;
+  height: 40px;
+  padding: 0.05rem 1.1rem 0rem 1.4rem;
+  border: solid 2px #fff;
+  outline: 0;
+  background-color: #3fd6d4;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #000;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+.button__download {
+  width: 30px;
+  fill: white;
+  margin-top: 4px;
+  margin-left: 4px;
+  transition: fill 0.2s ease-in-out;
+}
+.button:hover .button__download {
+  fill: #fff;
+}
+
+.footer {
+  background-color: black;
 }

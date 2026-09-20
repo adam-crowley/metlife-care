@@ -15,8 +15,8 @@
 }
 
 /*
- * A better looking default horizontal rule
- */
+   * A better looking default horizontal rule
+   */
 hr {
   display: block;
   height: 1px;
@@ -27,10 +27,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
 audio,
 canvas,
 iframe,
@@ -41,8 +41,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+   * Remove default fieldset styles.
+   */
 fieldset {
   border: 0;
   margin: 0;
@@ -50,31 +50,31 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+   * Allow only vertical resizing of textareas.
+   */
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-Helper classes
-========================================================================== */
+	 Helper classes
+	 ========================================================================== */
 /*
- * Hide visually and from screen readers
- */
+   * Hide visually and from screen readers
+   */
 .hidden,
 [hidden] {
   display: none !important;
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -89,10 +89,10 @@ Helper classes
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -105,23 +105,23 @@ Helper classes
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+   * Hide visually and from screen readers, but maintain layout
+   */
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -133,10 +133,10 @@ Helper classes
 }
 
 /* ==========================================================================
-EXAMPLE Media Queries for Responsive Design.
-These examples override the primary ('mobile first') styles.
-Modify as content requires.
-========================================================================== */
+	 EXAMPLE Media Queries for Responsive Design.
+	 These examples override the primary ('mobile first') styles.
+	 Modify as content requires.
+	 ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -144,10 +144,10 @@ Modify as content requires.
   /* Style adjustments for high resolution devices */
 }
 /* ==========================================================================
-Print styles.
-Inlined to avoid the additional HTTP request:
-https://www.phpied.com/delay-loading-your-print-css/
-========================================================================== */
+	 Print styles.
+	 Inlined to avoid the additional HTTP request:
+	 https://www.phpied.com/delay-loading-your-print-css/
+	 ========================================================================== */
 @media print {
   *,
   *::before,
@@ -169,9 +169,9 @@ https://www.phpied.com/delay-loading-your-print-css/
     content: " (" attr(title) ")";
   }
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+  * Don't show links that are fragment identifiers,
+  * or use the `javascript:` pseudo protocol
+  */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -185,9 +185,9 @@ https://www.phpied.com/delay-loading-your-print-css/
     page-break-inside: avoid;
   }
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+  * Printing Tables:
+  * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+  */
   thead {
     display: table-header-group;
   }
@@ -209,12 +209,150 @@ https://www.phpied.com/delay-loading-your-print-css/
 /* ==========================================================================
 	 Typography
 	 ========================================================================== */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraLight.woff2") format("woff2"), url("../fonts/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-MediumItalic.woff2") format("woff2"), url("../fonts/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Thin.woff2") format("woff2"), url("../fonts/Poppins-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ThinItalic.woff2") format("woff2"), url("../fonts/Poppins-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-BlackItalic.woff2") format("woff2"), url("../fonts/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-BoldItalic.woff2") format("woff2"), url("../fonts/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/Poppins-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Poppins-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Italic.woff2") format("woff2"), url("../fonts/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-LightItalic.woff2") format("woff2"), url("../fonts/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 body {
-  color: #222;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #19124c;
   font-size: 1em; /* 16px */
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 p {
@@ -4346,8 +4484,91 @@ p {
     display: none !important;
   }
 }
-h1 {
-  text-align: center;
+html img {
+  max-width: 100%;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__content {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 5.5vw;
+  height: 100%;
+}
+
+.hero__met {
+  width: 19%;
+  margin-bottom: 3vw;
+}
+
+.hero__phase {
+  font-size: 1.75vw;
+  font-weight: bold;
+  color: #3fd6d4;
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+
+.hero__title {
+  color: white;
+  width: 48.5vw;
+  margin-bottom: 1vw;
+}
+
+.hero__subline {
+  font-size: 1.8vw;
+  font-weight: normal;
+}
+
+.hero__federation {
+  width: 7vw;
+  margin-top: auto;
+}
+
+.button {
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-decoration: none;
+  pointer-events: all;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 40px;
+  height: 40px;
+  padding: 0.05rem 1.1rem 0rem 1.4rem;
+  border: solid 2px #fff;
+  outline: 0;
+  background-color: #3fd6d4;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.button__download {
+  width: 30px;
+  fill: white;
+  margin-top: 4px;
+  margin-left: 4px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.button:hover .button__download {
+  fill: #fff;
+}
+
+.footer {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
